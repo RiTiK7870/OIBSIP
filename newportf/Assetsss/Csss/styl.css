@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+/*header*/
+body {
+  background-image: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 17%,
+      rgba(87, 146, 234, 0.6) 17%,
+      rgba(87, 146, 234, 0.6) 59%,
+      transparent 59%,
+      transparent 64%,
+      rgba(34, 81, 222, 0.6) 64%,
+      rgba(34, 81, 222, 0.6) 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 2%,
+      rgb(87, 146, 234) 2%,
+      rgb(87, 146, 234) 46%,
+      rgb(114, 178, 239) 46%,
+      rgb(114, 178, 239) 54%,
+      transparent 54%,
+      transparent 63%,
+      rgb(7, 48, 216) 63%,
+      rgb(7, 48, 216) 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.nav h1 {
+  color: white;
+  background: linear-gradient(
+    to left,
+    #15c1ca 0%,
+    #5dff61 25%,
+    #05c1ff 50%,
+    #ff5a16 75%,
+    #4ee9e9 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 6rem;
+  text-shadow: 2px 2px 2px orange;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 5px 0;
+  font-weight: 520;
+}
+.nav ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.nav ul li a:hover {
+  color: #fd4766;
+}
+.nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+.nav ul li a:hover:after {
+  width: 100%;
+}
+@media screen and (max-width: 840px) {
+  .navbar {
+    height: 6rem;
+    overflow: hidden;
+  }
+  .nav h1 {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
+
+/*section one*/
+.sectionone {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+}
+.info h1 {
+  color: white;
+  padding-right: 5rem;
+}
+button {
+  background-color: #fd4766;
+  padding: 1rem 2rem;
+  margin-right: 5rem;
+  border-radius: 3rem;
+  border: 3px solid #fd4766;
+}
+.info > h2 {
+  color: white;
+  padding-right: 5rem;
+}
+button:hover {
+  background-color: rgb(16, 154, 208);
+  transition-duration: 0.5s;
+}
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 1000;
+}
+.info + img {
+  height: 30rem;
+  width: 35rem;
+  margin-left: 11rem;
+}
+.info {
+  padding-top: 8rem;
+  line-height: 5rem;
+  padding-left: 5rem;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .info + img {
+    height: 50%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 748px) {
+  .info h1 {
+    display: inline-block;
+    height: 50%;
+    width: 80%;
+    padding: 0;
+  }
+  .info {
+    padding: 0;
+    margin: 0;
+  }
+  .info + img {
+    margin: 0;
+    padding-top: 6rem;
+  }
+  .button {
+    margin: 0;
+    padding-left: 2rem;
+  }
+}
+
+/*sectiontwo */
+.main {
+  overflow: auto;
+  background-image: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 20%,
+      rgba(60, 61, 207, 0.6) 20%,
+      rgba(60, 61, 207, 0.6) 57%,
+      transparent 57%,
+      transparent 64%,
+      rgba(118, 125, 200, 0.6) 64%,
+      rgba(118, 125, 200, 0.6) 100%
+    ),
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      transparent 55%,
+      rgb(60, 61, 207) 55%,
+      rgb(60, 61, 207) 65%,
+      rgb(104, 109, 202) 65%,
+      rgb(104, 109, 202) 86%,
+      transparent 86%,
+      transparent 91%,
+      rgb(147, 157, 196) 91%,
+      rgb(147, 157, 196) 100%
+    ),
+    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  height: 38rem;
+  margin: 0 8rem 0 14rem;
+  text-align: center;
+  padding: 5rem 2rem 0 2rem;
+}
+.main h1 {
+  font-size: 25px;
+  color: white;
+  line-height: 3rem;
+  background: #ff0000;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ff0000 0%,
+    #ffff00 25%,
+    #05c1ff 50%,
+    #ffff00 75%,
+    #ff0000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.infoexp {
+  width: 22rem;
+  line-height: 1.5rem;
+  padding-top: 2rem;
+}
+.infoexp h1 {
+  background: #f8ef1c;
+  background: linear-gradient(
+    to right,
+    #f8ef1c 0%,
+    #f13521 50%,
+    #06536a 51%,
+    #481c5c 71%,
+    #e71d40 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.infoexp p {
+  color: black;
+}
+.infoone img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.infoone {
+  padding-top: 2rem;
+}
+/*sectionthree */
+.perinfo {
+  display: flex;
+}
+
+.sectionthree > h1 {
+  text-align: center;
+  padding-top: 5rem;
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 2px 5px 10px blueviolet;
+  text-decoration: underline;
+}
+
+.perinfo {
+  padding: 5rem 14rem 5rem 14rem;
+}
+
+.image {
+  width: 100rem;
+  height: 35rem;
+  margin-right: 10rem;
+  box-shadow: 10px 7px 20px orange;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  filter: greyscale(1);
+  transition: scale 750ms ease-out, filter 250ms ease-in-out;
+}
+
+.image img:hover {
+  scale: 1.35;
+  filter: greyscale(0);
+}
+
+.maininfo {
+  color: white;
+  padding-left: 3rem;
+}
+
+.maininfo h1 {
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.maininfo p {
+  line-height: 1.75rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+/*section four*/
+.headfour {
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  text-shadow: 2px 5px 10px blueviolet;
+  text-decoration: underline;
+}
+.year {
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-bottom: -1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.deg {
+  width: 12rem;
+  font-size: 15px;
+  color: white;
+}
+
+.degree {
+  color: white;
+}
+
+.degree h4 {
+  margin-bottom: 1rem;
+  color: black;
+}
+.newyear {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.divtwo {
+  border-right: 0.25px solid white;
+  height: 8rem;
+}
+
+/*section fives */
+
+.sectionfive {
+  padding: 5rem 10rem 0 10rem;
+}
+
+.sectionfive h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 5px 10px blueviolet;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+.newcard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardone {
+  width: 22rem;
+  height: 15rem;
+
+  margin-bottom: 3rem;
+}
+.cardone img {
+  margin: 4rem 0 0 7.5rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+.cardone img:hover {
+  box-shadow: 10px 7px 25px wheat;
+  height: 9rem;
+  width: 9rem;
+  margin: 3rem 0 0 6rem;
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+}
+.cardone p {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: wheat;
+}
+
+/* section six */
+
+.headsix {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 2px 5px 10px blueviolet;
+  text-decoration: underline;
+}
+.contact {
+  width: 50%;
+  display: inline-block;
+  color: white;
+}
+
+.contactinfo {
+  color: white;
+}
+.contactone {
+  display: flex;
+  margin-left: 15rem;
+  gap: 10rem;
+}
+.contactone input {
+  height: 2rem;
+  width: 15rem;
+  font-weight: 1000;
+  background-color: white;
+}
+.contacttwo {
+  margin-top: 3rem;
+  margin-left: 15rem;
+}
+.contacttwo input {
+  width: 34.8rem;
+  height: 2rem;
+  background-color: white;
+}
+.contactthree {
+  margin-top: 3rem;
+  margin-left: 15rem;
+  margin-bottom: 5rem;
+}
+.contactthree input {
+  width: 34.8rem;
+  height: 2rem;
+  background-color: white;
+}
+.contact > button {
+  margin-left: 30rem;
+}
+.contactflex {
+  display: flex;
+}
+.contactinfo {
+  margin-left: 15rem;
+}
+
+.contactinfo h3,
+h4,
+p {
+  padding-bottom: 1rem;
+  color: black;
+}
+.contactinfo > p {
+  font-size: 18px;
+  color: white !important;
+}
+h4 + p {
+  font-size: 15px;
+  color: white !important;
+}
+@media (max-width: 1150px) {
+  .contactflex {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*foooter*/
+footer p {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-size: 20px;
+  color: white;
+}
