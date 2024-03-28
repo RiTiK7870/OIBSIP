@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(/tempconvert/Assets/images/imgone.jpg);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  background: #008080;
+  background: linear-gradient(
+    to left,
+    #008080 0%,
+    #fbff59 35%,
+    #05c1ff 25%,
+    #82ff7d 75%,
+    #005757 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.converter {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 1rem;
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(49, 157, 235) 0%,
+    rgb(49, 157, 235) 13%,
+    rgb(76, 166, 234) 13%,
+    rgb(76, 166, 234) 23%,
+    rgb(103, 176, 232) 23%,
+    rgb(103, 176, 232) 33%,
+    rgb(130, 185, 231) 33%,
+    rgb(130, 185, 231) 46%,
+    rgb(156, 194, 230) 46%,
+    rgb(156, 194, 230) 48%,
+    rgb(183, 203, 229) 48%,
+    rgb(183, 203, 229) 63%,
+    rgb(210, 213, 227) 63%,
+    rgb(210, 213, 227) 83%,
+    rgb(237, 222, 226) 83%,
+    rgb(237, 222, 226) 100%
+  );
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#temperature {
+  margin-bottom: -1rem;
+}
+
+.input-group label {
+  width: 120px;
+  font-weight: bold;
+}
+
+.input-group input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+}
+
+.input-group select {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-image: radial-gradient(
+    circle at top left,
+    rgb(195, 195, 195) 0%,
+    rgb(195, 195, 195) 2%,
+    rgb(202, 202, 202) 2%,
+    rgb(202, 202, 202) 23%,
+    rgb(209, 209, 209) 23%,
+    rgb(209, 209, 209) 55%,
+    rgb(217, 217, 217) 55%,
+    rgb(217, 217, 217) 80%,
+    rgb(224, 224, 224) 80%,
+    rgb(224, 224, 224) 86%,
+    rgb(231, 231, 231) 86%,
+    rgb(231, 231, 231) 96%,
+    rgb(238, 238, 238) 96%,
+    rgb(238, 238, 238) 100%
+  );
+  color: black;
+  font-weight: bold;
+}
+
+.convert-btn {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 7.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.result {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
