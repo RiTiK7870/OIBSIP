@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: cursive;
+}
+
+body {
+  background-image: radial-gradient(
+      circle at 99% 33%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 37%,
+      transparent 37%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 46% 16%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 43%,
+      transparent 43%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 99% 25%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 57% 88%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 86%,
+      transparent 86%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      hsla(235, 0%, 48%, 0.03) 0%,
+      hsla(235, 0%, 48%, 0.03) 22%,
+      transparent 22%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+  height: 80rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 68rem;
+}
+
+header h1 img {
+  height: 1.75rem;
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+
+header h1 img:hover {
+  box-shadow: 2px 2px 30px orange;
+}
+
+header h1 {
+  padding-left: 10rem;
+  background: #77ed4a;
+  background: linear-gradient(
+    to right,
+    #113a01 0%,
+    #0481ae 25%,
+    #1151e2 75%,
+    #6f0365 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 411px) and (max-width: 1050px) {
+  header h1 {
+    padding-left: 5rem;
+  }
+}
+.nav {
+  padding: 30px 100px;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  padding: 5px 0;
+  position: relative;
+  color: black;
+}
+
+.nav ul li a:hover {
+  color: #fd4766;
+}
+.nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+.nav ul li a:hover:after {
+  width: 100%;
+}
+
+/*main*/
+
+.main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 67rem;
+}
+
+.info {
+  padding: 5rem;
+  width: 50%;
+}
+
+.info h1 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 4rem;
+  background: #267b80;
+  background: linear-gradient(
+    to left,
+    #03939a 0%,
+    #039105 25%,
+    #026a8d 50%,
+    #9d3002 75%,
+    #075555 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.info p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+.info > button {
+  margin-top: 3rem;
+  text-align: center;
+  color: black;
+}
+
+button {
+  background-color: #fd4766;
+  color: white;
+  border: 2px solid transparent;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+  margin-right: 1.25rem;
+  font-size: 1rem;
+  margin-left: 15rem;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #fd4766;
+  cursor: pointer;
+  color: wheat;
+}
+button > a {
+  color: #fff;
+  text-decoration: none;
+}
+button > a:hover {
+  color: black;
+}
+
+.icons {
+  margin-top: 2rem;
+  margin-left: 3rem;
+
+  padding: 2rem;
+}
+
+.icons i {
+  font-size: 4rem;
+  margin-right: 3rem;
+}
+
+.image-container {
+  width: 40%;
+  height: 30rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 5px 2px 30px orange;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  filter: greyscale(1);
+  transition: scale 750ms ease-out, filter 250ms ease-in-out;
+}
+
+.image-container img:hover {
+  scale: 1.25;
+  filter: greyscale(0);
+}
+
+/*secrtion one*/
+
+.newsec {
+  position: relative;
+  bottom: 62rem;
+}
+.newsec h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  background: #65cbfc;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #65cbfc 1%,
+    #a45e9a 6%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionone {
+  display: flex;
+  width: 30%;
+  height: 450px;
+  gap: 2px;
+  align-items: center;
+  margin-left: 12.5rem;
+}
+
+.sectionone img {
+  width: 20%;
+  height: 450px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 2px solid white;
+  border-radius: 15px;
+  transition: all ease 0.5s;
+}
+
+.sectionone img:hover {
+  width: 100%;
+  scale: 1.1;
+}
